@@ -1,5 +1,6 @@
 
-import opentype from 'https://unpkg.com/opentype.js@1.3.4/dist/opentype.module.js';
+
+import * as opentype from 'opentype.js';
 
 // Re-implementing necessary logic inside worker to avoid complex imports
 // during the transition, as workers have separate scopes.
