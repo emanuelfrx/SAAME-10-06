@@ -1,9 +1,9 @@
 
 
-import * as opentype from 'opentype.js';
 
-// Re-implementing necessary logic inside worker to avoid complex imports
-// during the transition, as workers have separate scopes.
+// Remova o 'import opentype from ...' e use isto:
+importScripts('https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js');
+
 
 const DIACRITICS_MAP = {
     'A': ['Á','À','Â','Ä','Ã','Å','Ā','Ă','Ą', 'Ǎ', 'Ǻ'],

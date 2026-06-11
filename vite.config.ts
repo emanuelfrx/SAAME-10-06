@@ -11,7 +11,6 @@ export default defineConfig(({ mode }) => {
       },
      plugins: [react()],
       worker: {
-        format: 'es', // Garante que o worker funcione como um módulo padrão
         plugins: () => [react()] // Garante que o worker entenda o ambiente React
       },
       resolve: {
