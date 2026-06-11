@@ -9,10 +9,10 @@ export default defineConfig(({ mode }) => {
         port: 3000,
         host: '0.0.0.0',
       },
-      plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+     plugins: [react()],
+      worker: {
+        format: 'es', // Garante que o worker funcione como um módulo padrão
+        plugins: () => [react()] // Garante que o worker entenda o ambiente React
       },
       resolve: {
         alias: {
