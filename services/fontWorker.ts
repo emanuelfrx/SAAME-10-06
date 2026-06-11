@@ -1,9 +1,6 @@
 
 
-
-// Remova o 'import opentype from ...' e use isto:
-importScripts('https://cdn.jsdelivr.net/npm/opentype.js@latest/dist/opentype.min.js');
-
+import * as opentype from 'opentype.js';
 
 const DIACRITICS_MAP = {
     'A': ['Á','À','Â','Ä','Ã','Å','Ā','Ă','Ą', 'Ǎ', 'Ǻ'],
